@@ -1,0 +1,20 @@
+parameter_name,description,example_value,data_type,required,group
+all_words,Include posts containing all of these words,what's happening,string,false,words
+exact_phrase,Find posts with this exact phrase,happy hour,string,false,words
+any_words,Include posts with any of these words,cats dogs,string,false,words
+none_words,Exclude posts with these words,cats dogs,string,false,words
+hashtags,Include posts with these hashtags,ThrowbackThursday,string,false,words
+language,Language of posts,en,enum,false,words
+from_accounts,Posts sent from these accounts,@X,string,false,accounts
+to_accounts,Posts sent in reply to these accounts,@X,string,false,accounts
+mentioning_accounts,Posts mentioning these accounts,@SFBART @Caltrain,string,false,accounts
+include_replies,Include reply posts,true,boolean,false,filters
+replies_only,Show only reply posts,false,boolean,false,filters
+include_links,Include posts with links,true,boolean,false,filters
+links_only,Show only posts with links,false,boolean,false,filters
+min_replies,Minimum number of replies,280,integer,false,engagement
+min_likes,Minimum number of likes,280,integer,false,engagement
+min_reposts,Minimum number of reposts,280,integer,false,engagement
+from_date,Start date for search (YYYY-MM-DD),2024-01-01,date,false,dates
+to_date,End date for search (YYYY-MM-DD),2024-12-31,date,false,dates
+language_options,"ar,ar-x-fm,bn,eu,bg,ca,hr,cs,da,nl,en,fi,fr,de,el,gu,he,hi,hu,id,it,ja,kn,ko,mr,no,fa,pl,pt,ro,ru,sr,zh-cn,sk,es,sv,ta,th,zh-tw,tr,uk,ur,vi",en,enum,false,metadata
